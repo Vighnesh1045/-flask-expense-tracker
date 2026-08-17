@@ -137,7 +137,10 @@ a { color: inherit; text-decoration: none; }
     font-size: 0.875rem;
     font-weight: 500;
     text-align: center;
+<<<<<<< HEAD
     margin: 0 auto;
+=======
+>>>>>>> upstream/main
 }
 
 .flash-error   { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
@@ -151,15 +154,23 @@ a { color: inherit; text-decoration: none; }
 
 .hero {
     padding: 5rem 2rem 4rem;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 3rem;
+=======
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+>>>>>>> upstream/main
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .hero-inner {
     display: flex;
     flex-direction: column;
@@ -193,20 +204,51 @@ a { color: inherit; text-decoration: none; }
     font-weight: 700;
     font-size: clamp(2.5rem, 5.5vw, 3.75rem);
     line-height: 1.15;
+=======
+.hero-badge {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+>>>>>>> upstream/main
     letter-spacing: -0.02em;
     color: var(--ink);
     margin-bottom: 1.25rem;
 }
 
+<<<<<<< HEAD
 .hero-title-accent {
+=======
+.hero-title em {
+    font-style: italic;
+>>>>>>> upstream/main
     color: var(--accent);
 }
 
 .hero-subtitle {
+<<<<<<< HEAD
     font-size: 1.1rem;
     color: var(--ink-muted);
     line-height: 1.7;
     max-width: 540px;
+=======
+    font-size: 1.05rem;
+    color: var(--ink-muted);
+    line-height: 1.7;
+    max-width: 460px;
+>>>>>>> upstream/main
     margin-bottom: 2rem;
 }
 
@@ -214,16 +256,24 @@ a { color: inherit; text-decoration: none; }
     display: flex;
     gap: 1rem;
     align-items: center;
+<<<<<<< HEAD
     justify-content: center;
 }
 
 /* ------------------------------------------------------------------ */
 /* Hero visual (app frame)                                             */
+=======
+}
+
+/* ------------------------------------------------------------------ */
+/* Mock card (hero visual)                                             */
+>>>>>>> upstream/main
 /* ------------------------------------------------------------------ */
 
 .hero-visual {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     width: 100%;
 }
 
@@ -318,20 +368,93 @@ a { color: inherit; text-decoration: none; }
 
 .hero-progress-track {
     height: 8px;
+=======
+}
+
+.mock-card {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+}
+
+.mock-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.mock-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.mock-total {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    color: var(--ink);
+}
+
+.mock-bars { display: flex; flex-direction: column; gap: 1rem; }
+
+.mock-bar-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 60px;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.mock-cat {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+}
+
+.mock-bar-track {
+    height: 6px;
+>>>>>>> upstream/main
     background: var(--border-soft);
     border-radius: 999px;
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 .hero-progress-bar {
     height: 100%;
+=======
+.mock-bar {
+    height: 100%;
+    background: var(--accent);
+>>>>>>> upstream/main
     border-radius: 999px;
     transition: width 0.6s ease;
 }
 
+<<<<<<< HEAD
 .hero-progress-food { background: #e2a13a; }
 .hero-progress-travel { background: #4f7edb; }
 .hero-progress-bills { background: #8b7ae0; }
+=======
+.mock-bar-2 { background: var(--accent-2); }
+.mock-bar-3 { background: #5b7fa6; }
+.mock-bar-4 { background: #8b5e83; }
+
+.mock-amt {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--ink-muted);
+    text-align: right;
+}
+>>>>>>> upstream/main
 
 /* ------------------------------------------------------------------ */
 /* Buttons                                                             */
@@ -372,6 +495,28 @@ a { color: inherit; text-decoration: none; }
     color: var(--ink);
 }
 
+<<<<<<< HEAD
+=======
+.btn-delete {
+    display: inline-block;
+    background: transparent;
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: background 0.2s;
+}
+
+.btn-delete:hover {
+    background: var(--danger-light);
+}
+
+>>>>>>> upstream/main
 /* ------------------------------------------------------------------ */
 /* Features section                                                    */
 /* ------------------------------------------------------------------ */
@@ -554,6 +699,7 @@ a { color: inherit; text-decoration: none; }
 
 .auth-switch a:hover { text-decoration: underline; }
 
+<<<<<<< HEAD
 .btn-delete {
     display: inline-block;
     background: transparent;
@@ -573,6 +719,8 @@ a { color: inherit; text-decoration: none; }
     background: var(--danger-light);
 }
 
+=======
+>>>>>>> upstream/main
 /* ------------------------------------------------------------------ */
 /* Footer                                                              */
 /* ------------------------------------------------------------------ */
@@ -604,12 +752,85 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ------------------------------------------------------------------ */
+<<<<<<< HEAD
+=======
+/* Terms page                                                          */
+/* ------------------------------------------------------------------ */
+
+.terms-page {
+    padding: 4rem 2rem 6rem;
+}
+
+.terms-inner {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.terms-inner h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+}
+
+.terms-updated {
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-bottom: 3rem;
+}
+
+.terms-inner h2 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--ink);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.terms-inner p {
+    font-size: 0.95rem;
+    color: var(--ink-muted);
+    line-height: 1.8;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* Global flash messages                                               */
+/* ------------------------------------------------------------------ */
+
+.flash {
+    display: table;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.flash-error   { background: #fef0f0; color: #b94040; border: 1px solid #f5c6c6; }
+.flash-success { background: var(--accent-light); color: var(--accent); border: 1px solid #c3d9c9; }
+.flash-warning { background: #fdf3e3; color: #9a6400; border: 1px solid #f5dfa0; }
+.flash-info    { background: #e8ecf4; color: #3a5a8a; border: 1px solid #c5d0e8; }
+
+/* ------------------------------------------------------------------ */
+>>>>>>> upstream/main
 /* Responsive                                                          */
 /* ------------------------------------------------------------------ */
 
 @media (max-width: 900px) {
+<<<<<<< HEAD
     .hero-subtitle { max-width: 100%; }
     .hero-stats-row { grid-template-columns: 1fr; }
+=======
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-subtitle { max-width: 100%; }
+    .hero-actions { justify-content: center; }
+    .hero-visual { display: none; }
+>>>>>>> upstream/main
 
     .features-inner { grid-template-columns: 1fr; }
 }
