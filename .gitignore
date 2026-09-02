@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .claude.json
 reference images/
+*.db
+*.sqlite3
+instance/
