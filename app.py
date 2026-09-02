@@ -1,4 +1,5 @@
 import calendar
+import os
 import sqlite3
 from datetime import date, datetime
 
@@ -27,7 +28,7 @@ from database.queries import (
 )
 
 app = Flask(__name__)
-app.secret_key = "dev-secret-key"
+app.secret_key = os.environ.get("SECRET_KEY") or os.urandom(24)
 
 CATEGORIES = [
     "Food",
